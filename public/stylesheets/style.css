@@ -1,0 +1,40 @@
+.rabelo-color {
+    background-color: #F26522;
+}
+
+header nav {
+    height: 80px;
+}
+
+#sub-header {
+    height: 50px;
+    background-color: #D35400;
+}
+
+#rabelo-logo {
+    height: 80%;;
+    width: 80%;
+}
+
+header nav div ul li a {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#header-nav-menu li a, #header-nav-menu li i {
+    color: #ffffff;
+}
+
+.vertical-row {
+    height: 50px; /*Altura da linha*/
+    border-left: 1px solid #000000; /* Tamanho da linha.*/
+    opacity: 0.5;
+}
+
+#cart-dropdown {
+    width: 300%;
+}
+
+#space {
+    width: 200px;
+}

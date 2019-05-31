@@ -1,13 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rabelo - Home</title>
-    <style rel="stylesheets" type="text/css" src="public/stylesheets/style.css"></style>
-</head>
-<body>
-    
+<html>
 
-    <script src="public/js/script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Rabelo</title>
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css" />
+  <link href="public/images/awsome-icons/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light rabelo-color">
+      <a class="navbar-brand" href="#"><img src="public/images/logo-rabelo.png" alt="Logo da Rabelo"
+          id="rabelo-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="header-nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Meus Pedidos</a>
+          </li class="nav-item">
+          <div class="vertical-row"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-comments"></i> Atendimento</a>
+          </li>
+          <div class="vertical-row"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-star"></i> Meus Favoritos</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav my-2 my-lg-0" id="header-nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="btn btn-secondary"><b>Entrar /
+                  Cadastre-se</b></button></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="dropdown-menu p-4 text-muted dropdown-menu-lg-right" aria-labelledby="navbarDropdown"
+              id="cart-dropdown">
+              <p>Seu carrinho de compras está vazio!</p>
+            </div>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="sub-header">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <div id="space"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Uma categoria</a>
+              <a class="dropdown-item" href="#">Outra categoria</a>
+              <a class="dropdown-item" href="#">Mais uma categoria</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Promoções
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Uma promoção</a>
+              <a class="dropdown-item" href="#">Outra promoção</a>
+              <a class="dropdown-item" href="#">Mais uma promoção</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Populares</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link">Lançamentos</a>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquise aqui!" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+
+  <script src="public/js/jquery-3.4.1.min.js"></script>
+  <script src="public/js/popper.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src="public/js/script.js"></script>
 </body>
+
 </html>
