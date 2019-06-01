@@ -2,13 +2,16 @@
     background-color: #F26522;
 }
 
+.rabelo-color-dark {
+    background-color: #D35400;
+}
+
 header nav {
     height: 80px;
 }
 
 #sub-header {
     height: 50px;
-    background-color: #D35400;
 }
 
 #rabelo-logo {
@@ -37,4 +40,24 @@ header nav div ul li a {
 
 #space {
     width: 200px;
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    margin: auto auto;
+    color: #ffffff;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+footer a {
+    color: #ffffff;
 }
