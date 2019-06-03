@@ -13,7 +13,7 @@
 
   <section>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light rabelo-color">
+      <nav class="navbar navbar-expand-lg navbar-light rabelo-color" id="header-nav">
         <a class="navbar-brand" href="#"><img src="public/images/logo-rabelo.png" alt="Logo da Rabelo"
             id="rabelo-logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -60,37 +60,71 @@
       <nav class="navbar navbar-expand-lg navbar-light rabelo-color-dark" id="sub-header">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <div id="space"></div>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Categorias
+                Eletroportáteis
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Uma categoria</a>
                 <a class="dropdown-item" href="#">Outra categoria</a>
-                <a class="dropdown-item" href="#">Mais uma categoria</a>
               </div>
             </li>
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Promoções
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Uma promoção</a>
-                <a class="dropdown-item" href="#">Outra promoção</a>
-                <a class="dropdown-item" href="#">Mais uma promoção</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Populares</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Lançamentos</a>
-            </li>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Eletrodomésticos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Uma categoria</a>
+                  <a class="dropdown-item" href="#">Outra categoria</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Eletrônicos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Uma categoria</a>
+                    <a class="dropdown-item" href="#">Outra categoria</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Beleza & Saúde
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Uma categoria</a>
+                      <a class="dropdown-item" href="#">Outra categoria</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Camêras & Filmadoras
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Uma categoria</a>
+                        <a class="dropdown-item" href="#">Outra categoria</a>
+                      </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          +Categorias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Uma categoria</a>
+                          <a class="dropdown-item" href="#">Outra categoria</a>
+                        </div>
+                      </li>
 
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -114,11 +148,16 @@
         <div class="container">
 
           <!-- Grid row-->
-          <div class="row py-4 d-flex align-items-center">
+          <div class="row py-2 d-flex align-items-center">
 
             <!-- Grid column -->
             <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h4 class="mb-0"><b>Promoções:</b></h4>
+              <form class="input-group">
+                <input class="form-control mr-sm-2" type="email" placeholder="Receba nossas promoções no seu e-mail"
+                  aria-label="Email">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Receber</button>
+              </form>
+
             </div>
             <!-- Grid column -->
 
@@ -126,24 +165,16 @@
             <div class="col-md-6 col-lg-7 text-center text-md-right">
 
               <a>
-                  Siga-nos: &nbsp; 
+                <b>Siga-nos: &nbsp;</b>
               </a>
 
               <!-- Facebook -->
               <a class="fb-ic">
                 <i class="fab fa-facebook-f white-text mr-4"> </i>
               </a>
-              <!-- Twitter -->
-              <a class="tw-ic">
-                <i class="fab fa-twitter white-text mr-4"> </i>
-              </a>
               <!-- Google +-->
               <a class="gplus-ic">
                 <i class="fab fa-google-plus-g white-text mr-4"> </i>
-              </a>
-              <!--Linkedin -->
-              <a class="li-ic">
-                <i class="fab fa-linkedin-in white-text mr-4"> </i>
               </a>
               <!--Instagram-->
               <a class="ins-ic">
@@ -167,7 +198,7 @@
 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              
+
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Institucional</h6>
             <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -189,7 +220,7 @@
 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              
+
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Dúvidas</h6>
             <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -208,7 +239,7 @@
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              
+
             <!-- Links -->
             <h6 class="text-uppercase font-weight-bold">Serviços</h6>
             <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -246,6 +277,25 @@
 
       </div>
       <!-- Footer Links -->
+
+      <!-- Payment methods-->
+      <div class="container">
+
+        <!-- payment cards -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a>
+              Formas de Pagamento:
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <img src="public/images/pagamentos.png" alt="Formas de pagamento, Master card, American express, Diners, Cartão Rabelo e Visa">
+          </li>
+        </ul>
+        <!-- payment cards -->
+
+      </div>
+      <!-- Payment methods-->
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3 rabelo-color-dark">© 2019 Copyright

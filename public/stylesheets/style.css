@@ -19,12 +19,16 @@ header nav {
     width: 80%;
 }
 
-header nav div ul li a {
+#header-nav div ul li a {
     font-size: 130%;
     font-weight: bold;
 }
 
-#header-nav-menu li a, #header-nav-menu li i {
+#sub-header div ul li a {
+    font-weight: bold;
+}
+
+#header-nav-menu li a, #header-nav-menu li i, #sub-header li a {
     color: #ffffff;
 }
 
@@ -36,10 +40,6 @@ header nav div ul li a {
 
 #cart-dropdown {
     width: 300%;
-}
-
-#space {
-    width: 200px;
 }
 
 footer {
