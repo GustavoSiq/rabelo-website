@@ -28,7 +28,7 @@ header nav {
     font-weight: bold;
 }
 
-#header-nav-menu li a, #header-nav-menu li i, #sub-header li a {
+#header-nav-menu li a, #header-nav-menu li i, #sub-header li > a {
     color: #ffffff;
 }
 
@@ -60,4 +60,34 @@ footer {
 
 footer a {
     color: #ffffff;
+}
+
+a:link { 
+    text-decoration:none; 
+} 
+
+#header-nav div ul li:hover a,
+#header-nav div ul li:hover a > i {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+#sub-header > a:hover {
+    background-color: #F26522;
+}
+
+#navbarDropdown:hover {
+    background-color: #F26522;
+
+}
+
+.dropdown-menu > a:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+#dropdown-item {
+    color: #000000;
 }
