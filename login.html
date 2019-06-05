@@ -167,7 +167,7 @@
                 <a class="dropdown-item" href="#">Utilidades Domésticas</a>
                 <a class="dropdown-item" href="#">Colchões</a>
               </div>
-            </li>  
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquise aqui!" aria-label="Search">
@@ -180,7 +180,80 @@
 
   <section>
     <div class="container-fluid" id="content">
-      <h1>Ola mundo!</h1>
+      <div class="row">
+        <div class="col-xl-1 col-lg-1 col-sm-1 col-ms-1"></div>
+        <div class="col-xl-5 col-lg-5 col-sm-10 col-md-10">
+          <div class="card" id="login">
+            <h1>Entrar</h1>
+            <p>Todos os campos são obrigatórios.</p>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Seu E-mail:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="E-mail de cadastro" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha:</label>
+                <input type="password" class="form-control" required id="exampleInputPassword1" placeholder="Sua senha">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
+              </div>
+
+              <div class="form-group">
+                <a href="#">Esqueci minha senha.</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+          </div>
+        </div>
+        <br/><br/>
+        <div class="col-xl-5 col-lg-5 col-sm-12 col-md-12">
+          <div class="card" id="resgister">
+            <h1>Cadastre-se</h1>
+            <p>Todos os campos são obrigatórios.</p>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nome:</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">CPF / CNPJ:</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="UMA MASCARA AQUI" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-mail:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Seu e-mail" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha:</label>
+                <input type="password" required class="form-control" id="exampleInputPassword1" placeholder="Crie uma senha">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Repita sua Senha:</label>
+                <input type="password" required class="form-control" id="exampleInputPassword1"
+                  placeholder="Repita sua senha">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" required class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Concordo com os termos de uso da Rabelo</label>
+                <br>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Me envie as novidades</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-sm-1 col-ms-1"></div>
+
+      </div>
     </div>
   </section>
 
