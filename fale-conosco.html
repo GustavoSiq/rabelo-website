@@ -6,8 +6,7 @@
   <title>Rabelo</title>
   <link rel="stylesheet" href="public/stylesheets/bootstrap.css" />
   <link rel="stylesheet" href="public/stylesheets/style.css" />
-  <link href="public/images/awsome-icons/css/all.min.css" rel="stylesheet" />
-
+  <link href="public/images/awsome-icons/css/all.min.css" rel="stylesheet">
   <link rel="icon" href="public/images/logo-rabelo-png.png" />
 </head>
 
@@ -184,91 +183,98 @@
     <div class="container-fluid" id="content">
 
       <div class="row">
-        <div class="col-xl-1 col-xl-1 col-sm-0 col-ms-0"></div>
-        <div class="col-xl-10 col-xl-10 col-sm-12 col-ms-12">
-          <a id="map" href="index.html">Página inicial</a> > <a>Entrar</a>
+        <div class="col-xl-2 col-xl-2 col-sm-0 col-ms-0"></div>
+        <div class="col-xl-8 col-xl-8 col-sm-12 col-ms-12">
+          <a id="map" href="index.html">Página inicial</a> > <a id="map" href="#">Atendimento</a> > <a>Fale conosco</a>
           <hr>
         </div>
-        <div class="col-xl-1 col-xl-1 col-sm-0 col-ms-0"></div>
+        <div class="col-xl-2 col-xl-2 col-sm-0 col-ms-0"></div>
       </div>
 
       <div class="row">
-        <div class="col-xl-1 col-lg-1 col-sm-1 col-ms-0"></div>
-        <div class="col-xl-5 col-lg-5 col-sm-10 col-md-12">
+        <div class="col-xl-2 col-lg-2 col-sm-0 col-ms-0"></div>
+        <div class="col-xl-8 col-lg-8 col-sm-12 col-md-12">
           <div class="card" id="login">
-            <h1>Entrar</h1>
-            <p>Todos os campos são obrigatórios.</p>
+            <h1>Fale conosco</h1>
+            <p id="required">Os campos com * são obrigatórios!</p>
             <hr>
             <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Seu E-mail:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="E-mail de cadastro" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha:</label>
-                <input type="password" class="form-control" required id="exampleInputPassword1" placeholder="Sua senha">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
+
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Atendimento: <a id="required">*</a></label>
+                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Selecione</option>
+                    <option value="1">Loja Fisica</option>
+                    <option value="2">Loja virtual</option>
+                  </select>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Assunto: <a id="required">*</a></label>
+                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option value="" selected>Selecione o Assunto</option>
+                    <option value="alt_cad">Alteração Cadastral</option>
+                    <option value="duv_pro">Dúvidas sobre Produtos</option>
+                    <option value="duv_gar">Dúvidas sobre Garantia Estendida</option>
+                    <option value="duv_ent">Dúvidas sobre Entrega</option>
+                    <option value="tro">Trocas e Devoluções</option>
+                    <option value="can">Cancelamento de Compra</option>
+                    <option value="sug">Sugestões e Elogios</option>
+                    <option value="seg_not">Solicitar 2ª Via de Nota Fiscal</option>
+                    <option value="rec">Reclamações</option>
+                  </select>
+                </div>
               </div>
 
-              <div class="form-group">
-                <a href="#">Esqueci minha senha.</a>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <div>
+                    <label for="exampleInputEmail1">Seu Nome: <a id="required">*</a></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Seu nome" required>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <div>
+                    <label for="exampleInputPassword1">Email: <a id="required">*</a></label>
+                    <input type="email" class="form-control" required id="exampleInputPassword1"
+                      placeholder="Seu email">
+                  </div>
+                </div>
               </div>
 
-              <button type="submit" class="btn btn-primary">Entrar</button>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control telefone" id="telefone" aria-describedby="emailHelp"
+                      placeholder="(00) 0 0000-0000">
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-sm-6 col-ms-6 form-group">
+                  <div>
+                    <label for="exampleInputPassword1">N do pedido (se necessário):</label>
+                    <input type="email" class="form-control" required id="exampleInputPassword1"
+                      placeholder="Seu email">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-xl-12 col-lg-12 col-sm-12 col-ms-12 form-group">
+                  <label for="exampleFormControlTextarea1">Mensagen: <a id="required">*</a></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> 
+                Enviar</button>
             </form>
           </div>
         </div>
-        <div class="col-xl-5 col-lg-5 col-sm-10 col-md-12">
-          <div class="card" id="resgister">
-            <h1>Cadastre-se</h1>
-            <p>Todos os campos são obrigatórios.</p>
-            <hr>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nome:</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Seu nome" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">CPF:</label>
-                <input type="text" class="form-control cpf" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="000.000.000-00" id="cpf" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">E-mail:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Seu e-mail" required>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha:</label>
-                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline"
-                  placeholder="Crie uma senha" required>
-                <small id="passwordHelpInline" class="text-muted">
-                  Sua senha precisa ter de 8-20 caracteres.
-                </small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Repita sua Senha:</label>
-                <input type="password" required class="form-control" id="exampleInputPassword1"
-                  placeholder="Repita sua senha">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Concordo com os termos de uso da Rabelo</label>
-                <br>
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Me envie as novidades</label>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-xl-1 col-lg-1 col-sm-1 col-ms-0"></div>
+        <div class="col-xl-2 col-lg-2 col-sm-0 col-ms-0"></div>
 
       </div>
     </div>
