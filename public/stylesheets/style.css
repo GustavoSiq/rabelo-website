@@ -123,3 +123,43 @@ footer a:hover {
 #required {
     color: red;
 }
+
+@media (max-width: 768px) {
+    #footer-menu, #side-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #footer-menu-mobile {
+        display: none;
+    }
+}
+
+#product-img {
+    height: 150px;
+    width: 150px;
+}
+
+#product-title {
+    font-size: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#product-price {
+    font-weight: bold;
+    color: #F26522;
+}
+
+#sem-tempo {
+    font-size: 80%;
+}
+
+#product {
+    margin-left: 10px;
+}
+
+#product:hover {
+    background-color: rgba(170, 165, 165, 0.342);
+}
